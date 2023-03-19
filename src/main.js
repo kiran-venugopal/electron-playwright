@@ -27,7 +27,7 @@ ipcMain.on("event", (_, eventName) => {
         document.addEventListener(
           "click",
           (e) => {
-            console.log("called", e, getXPath(e.target));
+            console.log("called", e);
             window.handleEvents({
               tag: e.target.tagName,
               x: e.pageX,
